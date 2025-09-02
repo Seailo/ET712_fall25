@@ -58,14 +58,14 @@ else{
 }
 
 console.log('/n ------ Example 5: check if an input is a string or a number ------')
-let user_input = prompt('enter a username')
-let check_username = isNaN(parseFloat(user_input))
-console.log(`${user_input} is not a number?${check_username}`)
+let user_inputq = prompt('enter a username')
+let check_username = isNaN(parseFloat(user_inputq))
+console.log(`${user_inputq} is not a number?${check_username}`)
 if(check_username){
-    console.log(`${user_input} is a String`)
+    console.log(`${user_inputq} is a String`)
 }
 else{
-    console.loag(`${user_input} is a NUMBER`)
+    console.loag(`${user_inputq} is a NUMBER`)
 }
 
 console.log('/n ------ Example 6: Multiway Conditional Statement ------')
@@ -101,25 +101,64 @@ switch(gender){
         console.log('ERROR: unable to read the selected gender')
 }
 
-console.log ('/n-------Exercise 1-------')
-let users_number = prompt ('Please enter a number')
-if (users_number === users_number<0){
-    console.log(`${users_number} is a Positive number`)
+console.log('\n-------Exercise 1-------');
+
+let users_number = Number(prompt('Please enter a number'));
+
+if (isNaN(users_number)) {
+    console.log(`That is a String`);
+} else if (users_number > 0) {
+    console.log(`${users_number} is a Positive number`);
+} else if (users_number < 0) {
+    console.log(`${users_number} is a Negative number`);
+} else if (users_number === 0) {
+    console.log(`${users_number} is zero`);
 }
-else if (users_number === 0<users_number){
-    console.log(`${users_number} is a Negative number`)
-}
-else if (users_number === users_number === 0){
-    console.log(`${users_number} is zero `)
-}
-else {
-    console.log(`${users_number} is a String`)
-}
-console.log ('/n-------Exercise 2 -------')
-let colors =["red","green", "orange","olive", "magenta"]
-let user_color = prompt("Enter a color")
-//use lower method to chnge everything into a lower case
+
+console.log('\n-------Exercise 2 -------');
+
+let colors = ["red", "green", "orange", "olive", "magenta"];
+let user_input = prompt("Enter a color");
+
+//use lower method tochnge everything into a lower case 
 
 // use indexOF method to check if the user_color exits in array colors
 
-//switch to print the result
+//switch to print the result 
+
+let user_color = user_input.toLowerCase();
+
+switch (user_input) {
+    case 'red':
+    case 'Red':
+    case 'RED':
+        console.log('You selected Red (found in the list).');
+        break;
+    case 'green':
+    case 'Green':
+    case 'GREEN':
+        console.log('You selected Green (found in the list).');
+        break;
+    case 'orange':
+    case 'Orange':
+    case 'ORANGE':
+        console.log('You selected Orange (found in the list).');
+        break;
+    case 'olive':
+    case 'Olive':
+    case 'OLIVE':
+        console.log('You selected Olive (found in the list).');
+        break;
+    case 'magenta':
+    case 'Magenta':
+    case 'MAGENTA':
+        console.log('You selected Magenta (found in the list).');
+        break;
+    default:
+        console.log(`${user_input} is NOT in the colors list.`);
+}
+//use lower method tochnge everything into a lower case 
+
+// use indexOF method to check if the user_color exits in array colors
+
+//switch to print the result 
