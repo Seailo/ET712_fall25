@@ -10,11 +10,8 @@ for (let x =0; x <5; x++){
 console.log(x)
 }
 console.log(`\n ------ Example 2: For Loop as a counter -------`)
-let num = parseInt(prompt("Enter a number between 0 and 90"))
-for(num; num<100; num++){
-if(num%2===0){
-console.log(num)
-}
+for (let x = -20; x<=5;x++){
+    console.log(x)
 }
 console.log(`\n ------ Example 3: for loop as decrement counter-------`)
 //print numbers from 3 to 0 --> 3, 2,1,0
@@ -23,7 +20,7 @@ for (let x = 3; x >= 0; x --){
 }
 console.log(`\n ------ Example 4: For Loop in an array -------`)
 let cars =['Mazda','BMW','Tesla','Jeep','Honda']
-for(index =0; index<cars.length++){
+for(let index =0; index<cars.length++){
     console.log(cars[index])
 }
 console.log("\n for loop using 'of' statement")
