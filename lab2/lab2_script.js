@@ -65,7 +65,7 @@ if(check_username){
     console.log(`${user_inputq} is a String`)
 }
 else{
-    console.loag(`${user_inputq} is a NUMBER`)
+    console.log(`${user_inputq} is a NUMBER`)
 }
 
 console.log('/n ------ Example 6: Multiway Conditional Statement ------')

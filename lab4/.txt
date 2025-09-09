@@ -1,0 +1,9 @@
+What i am thinking for the lab 4 exercise. SO in order to make the function be mixed into the problem i would have to make it some sort of
+add on to the exercise because instead of using the console log functions by itself i can shorten it and make the function act as the detector 
+when it is called upon so in order to do that i want to first make the prompt so that i 
+Wrong thought 
+the function will call upon the prompt so that it can pull in the activity to detect the others and make it so that you wouldn't 
+
+
+THings that looked like thaey can be called upon lab 2 Example 7: Switch Statement reason it gives back nan responses,   Lab 2 Example 5 reason it sorts out the nan and gives back a response
+Overall i think that example 7 will help the most with my exercise problem.
