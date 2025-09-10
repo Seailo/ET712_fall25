@@ -62,19 +62,21 @@ clicks on cancel in the dialog box / the prompt box  and if the user enters in a
 all of these actions will be covered by the following
 */ 
 
-function checkname(){
-console.log('------ Exercise -------')
-let name = prompt ('Please Enter Your Name')
-let check_name = isNaN(parseFloat(name))
+function checkname() {
+    console.log('------ Exercise -------')
+    let name = prompt('Please Enter Your Name')
 
-if(check_name){
-    console.log(`Welcome ${name} to the class!`)
+    if (name === null) {
+        console.log("Input cancelled.")
+    }
+    else {
+        let check_name = isNaN(parseFloat(name))
 
-else if (check_name = null)
-    console.log(`${name} is not a name`)
+        if (check_name) {
+            console.log(`Welcome ${name} to the class!`)
+        }
+        else {
+            console.log(`${name} is not a name`)
+        }
+    }
 }
-}
-else
-    console.log(`${name} is not a a name`)
-}
-
