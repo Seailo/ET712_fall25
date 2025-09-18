@@ -38,8 +38,8 @@ header {
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
-  padding: 0.5em;
-  border-right: 2px solid white; /* divider */
+  padding: 1.5em;
+  border-right: 1px solid white; /* divider */
 }
 
 .nav_header a:last-child {
