@@ -1,67 +1,97 @@
-*{box-sizing: border-box;}
-html{scroll-behavior: smooth;}
-img{width: 30%; display: block;}
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(240,240,240);
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
-/* Header*/
-header{
-    background-color: rgb(0,48,109);
+html {
+  scroll-behavior: smooth;
 }
-.top _header{
-    border: solid yellow 1px;
-    display: flex;
-    justify-content: center;
+img {
+  width: 100%;
+  display: block;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(240, 240, 240);
 }
 
-.top_header div{
-    border: solid red 1px;
-    width: 32%;
-    padding: 1%;
+/* Header */
+header {
+  background-color: rgb(0, 48, 109);
 }
-.navheader{
-    display: flex;
-    flex-wrap:wrap;
 
+.top_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0;
 }
-.navheader a{
-    display: inline-block;
-    width: 25%;
-    color: smokewhite;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 5%;
-    border-right: solid white 2px;
-}
-.navheader a:hover{
-    color: orange;
-}
-.bottom_header{
-    background-color: whitesmoke;
 
+/* Top header nav with white dividers */
+.nav_header {
+  display: flex;
+  flex-wrap: wrap;
 }
-.nav_botom_header { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 60%;
-    margin: auto;
+
+.nav_header a {
+  display: inline-block;
+  width: 25%;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em;
+  border-right: 2px solid white; /* divider */
 }
-.nav_botom_header a{
-    display: inline-block;
-    width: 20%;
-    padding: 2%;
-    color: rgb(0,48,109);
-    text-decoration: none;
+
+.nav_header a:last-child {
+  border-right: none; /* no divider on last link */
 }
-.intro_image{
-    position: absolute;
+
+.nav_header a:hover {
+  color: orange;
 }
-.intro_p{
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    font: 3em;
-    background-color: rgba(255,255,255,0.7);
+
+/* Bottom header */
+.bottom_header {
+  background-color: whitesmoke;
+}
+
+.nav_bottom_header {
+  background-color: white;   /* full white strip */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em 0;
+  border-top: 1px solid #ddd;   /* subtle top border like divider */
+  border-bottom: 1px solid #ddd; /* subtle bottom border */
+}
+
+/* Links inside */
+.nav_bottom_header a {
+  display: inline-block;
+  padding: 1em;
+  color: rgb(0,48,109);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav_bottom_header a:hover {
+  text-decoration: underline;
+  font-size: 1.05em;
+}
+/* Main */
+/* Intro image */
+.intro_image {
+  position: relative; /* keep it in flow, but allow text overlay */
+}
+
+.intro_p {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  color: white;
+  font-size: 3em; /* fixed from 'font' */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5em;
+  border-radius: 5px;
 }
