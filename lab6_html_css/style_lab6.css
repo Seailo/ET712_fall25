@@ -1,16 +1,7 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-html {
-  scroll-behavior: smooth;
-}
-img {
-  width: 100%;
-  display: block;
-}
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {box-sizing: border-box; margin: 0;}
+html {scroll-behavior: smooth;}
+img {width: 100%;display: block;}
+body {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(240, 240, 240);
 }
 
@@ -25,6 +16,10 @@ header {
   align-items: center;
   padding: 0.5em 0;
 }
+.top_header div{
+  width:32%;
+  padding: 1%;
+}
 
 /* Top header nav with white dividers */
 .nav_header {
@@ -38,12 +33,8 @@ header {
   color: whitesmoke;
   text-decoration: none;
   text-align: center;
-  padding: 1.5em;
+  margin-top: 5%;
   border-right: 1px solid white; /* divider */
-}
-
-.nav_header a:last-child {
-  border-right: none; /* no divider on last link */
 }
 
 .nav_header a:hover {
@@ -56,23 +47,20 @@ header {
 }
 
 .nav_bottom_header {
-  background-color: white;   /* full white strip */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  padding: 0.5em 0;
-  border-top: 1px solid #ddd;   /* subtle top border like divider */
-  border-bottom: 1px solid #ddd; /* subtle bottom border */
+  width: 60%;
+  margin: auto;
 }
 
 /* Links inside */
 .nav_bottom_header a {
   display: inline-block;
-  padding: 1em;
+  width: 20%;
+  padding: 2%;
   color: rgb(0,48,109);
   text-decoration: none;
-  font-weight: 500;
 }
 
 .nav_bottom_header a:hover {
@@ -82,7 +70,7 @@ header {
 /* Main */
 /* Intro image */
 .intro_image {
-  position: relative; /* keep it in flow, but allow text overlay */
+  position: relative; 
 }
 
 .intro_p {
@@ -90,26 +78,22 @@ header {
   top: 10%;
   right: 5%;
   color: white;
-  font-size: 3em; /* fixed from 'font' */
+  font-size: 3em; 
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5em;
-  border-radius: 5px;
 }
 /* INFO CARDS */
 .info_cards{
   background-color: aliceblue;
-  margin-top: 3em;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .card{
   width:500px;
-  border: none;
   height: 800px;
   background-color: white;
-  margin-left: 1%;
-  margin: 5%;
-  display:flex;
+  margin: 100px 30px 100px 30px;
 }
 .card_img{
   height:50%;
@@ -121,47 +105,77 @@ header {
   color:rgb(0, 48, 109);
 }
 .card_link{
-  color: rgb(219, 135, 79);
+  color: rgb(0, 48, 109);
   text-decoration: none;
-  display:flex;
 }
 .card_paragraph{
   padding: 1em;
 }
 .card_link:hover{
-  color: rgb(0, 48, 109);
+  color: orangered;
   text-decoration: underline;
 }
 .card_quicklink{
   width: 450px;
-  margin:100px 30px 100px 8px;
-  display: flex;
+  margin:100px 30px 100px 30px;
 }
 .quicklink{
   display: block;
-  border: 2px rgb(0, 48, 109) solid;
+  border: 2px orange solid;
   text-align: center;
   text-decoration: none;
   padding: 15px 50px;
   margin-top: 20px;
   border-radius:10px;
   color: rgb(0, 48, 109);
-  transition: ease-in-out 500ms;
+  transition: ease-in-out 200ms;
 }
 .quicklink:hover{
-  background-color: rgb(38, 38, 56);
+background-color: rgb(30, 30, 50);
   color: white;
   border: 2px gray solid;
+}
+.section_title{
+  text-align: center;
+  width: 100%;
+  margin-top:50px;
+  color: rgb(0, 48, 109);
+  font-size: 3em;
+}
+.cards2{
+  background-color: white;
+}
+/*Footer*/
+footer{
+  background-color: rgb(30, 30, 50);
+  color: white;
+  padding: 50px 0;
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.footer_left, .footer_center, .footer_right{
+  width: 400px;
+}
+.footer_left a, .footer_center a, .footer_right a{
+  color:white;
+  display:block;
+  text-decoration:none;
+  padding-top: 20px;
+}
+.footer_left a:hover, .footer_center a:hover, .footer_right a:hover{
+  color: orange;
 }
 .social_media{
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
 }
 .social_media a{
 display: inline-block;
 width: 15%;
 margin-right: 20px;
-opacity:0.7;
+opacity:0.6;
 transition: ease-in-out 300ms;
 }
 .social_media a:hover{
@@ -170,4 +184,6 @@ transition: ease-in-out 300ms;
 .copyright{
   width:100%;
   color: orange;
+  text-align: center;
+  margin-top: 100px;
 }
