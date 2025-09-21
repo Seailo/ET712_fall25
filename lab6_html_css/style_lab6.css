@@ -1,67 +1,173 @@
-*{box-sizing: border-box;}
-html{scroll-behavior: smooth;}
-img{width: 30%; display: block;}
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(240,240,240);
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
-/* Header*/
-header{
-    background-color: rgb(0,48,109);
+html {
+  scroll-behavior: smooth;
 }
-.top _header{
-    border: solid yellow 1px;
-    display: flex;
-    justify-content: center;
+img {
+  width: 100%;
+  display: block;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(240, 240, 240);
 }
 
-.top_header div{
-    border: solid red 1px;
-    width: 32%;
-    padding: 1%;
+/* Header */
+header {
+  background-color: rgb(0, 48, 109);
 }
-.navheader{
-    display: flex;
-    flex-wrap:wrap;
 
+.top_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0;
 }
-.navheader a{
-    display: inline-block;
-    width: 25%;
-    color: smokewhite;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 5%;
-    border-right: solid white 2px;
-}
-.navheader a:hover{
-    color: orange;
-}
-.bottom_header{
-    background-color: whitesmoke;
 
+/* Top header nav with white dividers */
+.nav_header {
+  display: flex;
+  flex-wrap: wrap;
 }
-.nav_botom_header { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 60%;
-    margin: auto;
+
+.nav_header a {
+  display: inline-block;
+  width: 25%;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5em;
+  border-right: 1px solid white; /* divider */
 }
-.nav_botom_header a{
-    display: inline-block;
-    width: 20%;
-    padding: 2%;
-    color: rgb(0,48,109);
-    text-decoration: none;
+
+.nav_header a:last-child {
+  border-right: none; /* no divider on last link */
 }
-.intro_image{
-    position: absolute;
+
+.nav_header a:hover {
+  color: orange;
 }
-.intro_p{
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    font: 3em;
-    background-color: rgba(255,255,255,0.7);
+
+/* Bottom header */
+.bottom_header {
+  background-color: whitesmoke;
+}
+
+.nav_bottom_header {
+  background-color: white;   /* full white strip */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em 0;
+  border-top: 1px solid #ddd;   /* subtle top border like divider */
+  border-bottom: 1px solid #ddd; /* subtle bottom border */
+}
+
+/* Links inside */
+.nav_bottom_header a {
+  display: inline-block;
+  padding: 1em;
+  color: rgb(0,48,109);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav_bottom_header a:hover {
+  text-decoration: underline;
+  font-size: 1.05em;
+}
+/* Main */
+/* Intro image */
+.intro_image {
+  position: relative; /* keep it in flow, but allow text overlay */
+}
+
+.intro_p {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  color: white;
+  font-size: 3em; /* fixed from 'font' */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+/* INFO CARDS */
+.info_cards{
+  background-color: aliceblue;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.card{
+  width:500px;
+  border: none;
+  height: 800px;
+  background-color: white;
+  margin-left: 1%;
+  margin: 5%;
+  display:flex;
+}
+.card_img{
+  height:50%;
+}
+.card_content{
+  padding: 1em;
+}
+.card_title{
+  color:rgb(0, 48, 109);
+}
+.card_link{
+  color: rgb(219, 135, 79);
+  text-decoration: none;
+  display:flex;
+}
+.card_paragraph{
+  padding: 1em;
+}
+.card_link:hover{
+  color: rgb(0, 48, 109);
+  text-decoration: underline;
+}
+.card_quicklink{
+  width: 450px;
+  margin:100px 30px 100px 8px;
+  display: flex;
+}
+.quicklink{
+  display: block;
+  border: 2px rgb(0, 48, 109) solid;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 50px;
+  margin-top: 20px;
+  border-radius:10px;
+  color: rgb(0, 48, 109);
+  transition: ease-in-out 500ms;
+}
+.quicklink:hover{
+  background-color: rgb(38, 38, 56);
+  color: white;
+  border: 2px gray solid;
+}
+.social_media{
+  display: flex;
+  justify-content: center;
+}
+.social_media a{
+display: inline-block;
+width: 15%;
+margin-right: 20px;
+opacity:0.7;
+transition: ease-in-out 300ms;
+}
+.social_media a:hover{
+  opacity: 1;
+}
+.copyright{
+  width:100%;
+  color: orange;
 }
