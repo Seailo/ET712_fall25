@@ -26,13 +26,13 @@
     background-color: red;
 }
 .square{
-    width:150px;
+    width:350px;
     height:150px;
     margin:auto;
     background-color: chartreuse; 
 }
 .circle{
-    width:150px;
+    width:350px;
     height:150px;
     border-radius: 50%;
     margin:auto;

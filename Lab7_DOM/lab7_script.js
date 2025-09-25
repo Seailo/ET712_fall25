@@ -21,10 +21,10 @@ for(let index=0; index<description_all.length; index++){
 }
 
 // collect(select) the elements
-let shapediv = document.querySelector('.shapeDivision')
+let shape = document.querySelector('.shapeDivision')
 let btn_square=document.querySelector('.btn_square')
-let btn_circle= document.querySelector('btn_circle')
-let btn_rectangle =document.querySelector(".btn rectangle")
+let btn_circle= document.querySelector('.btn_circle')
+let btn_rectangle =document.querySelector(".btn_rectangle")
 
 // add an event to each button
 
@@ -38,7 +38,7 @@ btn_circle.addEventListener("click", function(){
     shape.className="circle"
     shape.textContent='CIRCLE'
     shape.style.fontSize= "2rem"
-    shape.style.backgroundColor = "aquamarine";
+    shape.style.backgroundColor = "grey";
 })
 
 btn_rectangle.addEventListener("click", function(){
