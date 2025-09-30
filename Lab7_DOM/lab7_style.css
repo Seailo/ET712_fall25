@@ -26,13 +26,13 @@
     background-color: red;
 }
 .square{
-    width:350px;
+    width:150px;
     height:150px;
     margin:auto;
     background-color: chartreuse; 
 }
 .circle{
-    width:350px;
+    width:200px;
     height:150px;
     border-radius: 50%;
     margin:auto;
@@ -48,4 +48,18 @@
     text-align:center;
     font-size: 3rem;
     padding:3rem;
+}
+.username_paragraph{
+    color:red;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Exercise*/
+
+div.divs2, div.divs3{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px;
 }
