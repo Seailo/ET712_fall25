@@ -83,7 +83,7 @@ inputtext.addEventListener("keydown",function(){
 let ps1 = document.querySelector(".ps1")
 // add a mouseout event to change the text content to "STUDENT'S FULL NAME"
 ps1.addEventListener("mouseout",function(){
-    ps1.textContent="STUDENT'S FULL NAME"
+    ps1.textContent="ANDREW MURRAY"
 })
 
 // search for the second p with class ps2
