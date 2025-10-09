@@ -4,20 +4,17 @@
  * 10/07/2025
  */
 console.log('Andrew Murray')
-letbtnpressme=document.querySelector(".btnpressme")
+let btnpressme = document.querySelector(".btnpressme")
 btnpressme.addEventListener("click", function(e){
     if(e.target.textContext== "PRESS ME!"){
         e.target.textContext="Key was pressed"
-
 }
 else{
     e.target.textContext ="PRESS ME!"
 }
 //togle between classes in css
-btnpressme.classlist.toggle(btnactive)
+btnpressme.classlist.toggle("btnactive")
 })
-
-
 
 
 
