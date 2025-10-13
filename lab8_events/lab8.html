@@ -9,40 +9,51 @@
 <body>
     <h1>Andrew Murray</h1>
     <h2>Lab 8, Events</h2>
+
     <button class="btnpressme">PRESS ME!</button>
+
     <h3>Event Delegation</h3>
-    <p> CLick on the list to remove an item</p>
-    <ul id ="list">
-        <li> Apple <span>&#10060;</span>
-            </li>
+    <p>Click on the list to remove an item</p>
+    <ul id="list">
+        <li>Apple <span>&#10060;</span></li>
         <li>Orange <span>&#10060;</span></li>
         <li>Kiwi <span>&#10060;</span></li>
     </ul>
 
     <h3>preventDefault() method</h3>
-    <a href=" https://www.qcc.cuny.edu" target ="_blank" class="qcclink">QCC link</a>
+    <a href="https://www.qcc.cuny.edu" target="_blank" class="qcclink">QCC link</a>
 
-
-
-<h2>WINDOW EVENTS</h2>
-<H3>Scroll Event</H3>
-<div id="content">
-    <h4>Scrollable Content</h4>
-    <p>This content is wider than the indow, allowing for horizontal scrolling.</p>
-</div>
-<buton class="btnscrollby">Scroll right</buton>
-
-<h3>Photo Gallery Scrolling</h3>
-<section class="maincontainer">
-    <div class="gallery-container">
-        <img class ="gallery-image" src="images/image1.jpg" alt="image1">
-        <img class ="gallery-image" src="images/image2.jpg" alt="image2">
-        <img class ="gallery-image" src="images/image3.jpg" alt="image3">
-        <img class ="gallery-image" src="images/image4.jpg" alt="image4">
+    <h2>WINDOW EVENTS</h2>
+    <h3>Scroll Event</h3>
+    <div id="content">
+        <h4>Scrollable Content</h4>
+        <p>This content is wider than the window, allowing for horizontal scrolling.</p>
     </div>
-    <button class="btnleft">&#x276E;</button>
-    <button class="btnright">&#x276F;</button>
-</section>
+    <button class="btnscrollby">Scroll right</button>
+
+    <h3>Photo Gallery Scrolling</h3>
+    <section class="maincontainer">
+        <div class="gallery-container">
+            <img class="gallery-image" src="images/image1.jpg" alt="image1">
+            <img class="gallery-image" src="images/image2.jpg" alt="image2">
+            <img class="gallery-image" src="images/image3.jpg" alt="image3">
+            <img class="gallery-image" src="images/image4.jpg" alt="image4">
+        </div>
+        <button class="btnleft">&#x276E;</button>
+        <button class="btnright">&#x276F;</button>
+    </section>
+
+    <!-- NOTE -->
+    <h2>NOTE:</h2>
+    <p>This exercise adds a new example showing how to count how many times a circular element is clicked using event handling.</p>
+
+    <!-- EXERCISE -->
+    <h3>Click Counter Circle</h3>
+    <div id="circle">
+        <span id="clickCount">0</span>
+    </div>
+    <button id="resetCount">Reset</button>
+
     <script src="lab8_script.js"></script>
 </body>
 </html>
