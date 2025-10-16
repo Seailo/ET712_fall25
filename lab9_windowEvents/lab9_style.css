@@ -1,8 +1,32 @@
 *{box-sizing:border-box;}
+img{width:100%; display: block;}
+html{scroll-behavior: smooth;}
+
+
 .displaypexels{
+    background-color: rgba(150, 150,150, 0.8);
     padding:1em;
+    width:200px;
+    font-size: 1.5em;
+    position: fixed;
+    top:0%;
+    right:0%;
 }
 
+
+.images_container{
+    width:90%;
+    margin:auto;
+    background-color:aliceblue;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img_gallery{
+    width:500px;
+    margin:2em;
+}
 
 /* to the top*/
 .toTop{
@@ -13,8 +37,9 @@
     padding:1em;
     border-radius: 50%;
     position: fixed;
-    bottom :0%;
-    right :0%;
+    bottom :5%;
+    right :5%;
+    display:none;
 }
 .toTop a{
     text-decoration: none;
@@ -26,18 +51,24 @@
     border-radius:12px;
     cursor:pointer;
 }
+.openmodal :hover{
+    opacity:0.8;
+}
+
 .modal_overlay{
     background-color: rgba(50,50,50, 0.6);
     position: fixed;
     top:0%;
+    bottom: 0%;
     right:0%;
     left:0%;
+    display:none;
 }
 .modal{
     background-color: whitesmoke;
     width:800px;
-    height:500px;
     margin:100px auto;
+    position: relative;
 }
 .close_btn{
     position:absolute;
@@ -58,4 +89,8 @@
 }
 .modal_info{
     display:flex;
+}
+.modal_img, .modal_p{
+    width:50%;
+    padding:2rem;
 }
