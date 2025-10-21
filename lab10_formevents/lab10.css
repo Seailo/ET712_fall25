@@ -59,7 +59,6 @@ img{width: 1000%; display:block;}
 .username_error_msg{
     color: crimson;
     font-size: 0.8rem;
-    display:none;
 }
 .btnsubmit:disabled{
     background-color: lightslategray;
