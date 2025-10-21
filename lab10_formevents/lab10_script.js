@@ -1,6 +1,6 @@
 console/log(`Andrew Murray`)
 //collect the elements 
-let myform =document.querySelector(".myform")
+let myform =document.querySelector("#form1")
 let username = document.querySelector("#username")
 let greeting = document.querySelector(".greeting")
 let displayusername= document.querySelector(".display_username")
@@ -39,13 +39,37 @@ let username_error_msg= document.querySelector(".username_error_msg")
 let usernameInput = document.querySelector("#username")
 usernameInput.addEventListener("Input",function(){
     usernamevalue= usernameInput.value
-    usernamevaluelength =usernamvalue.length
-    if(20>=usernamevaluelength >=5){
-        displayusername.style.textContent=""
+    usernamevaluelenght =usernamevalue.length
+    if(usernamevaluelenght >=5 && usernamevaluelenght<20){
+        username_error_msg.textContent=""
+        btnsubmit.disabled = false
+        usernameInput.classList.add("active_input_valid")
     }
+        else if(usernamevaluelength===20){
+            username_error_msg.textContent ="username cant be 20+ characters"
+        }
         else{
-            displayusername.style.textContent="Username must be between 5 and 20 characters"
+            username_error_msg.textContent="username must be between 5 and 20"
+            btnsubmit.disabled = true
+            usernameInput.classList
+            usernameInput.classList
+
         }
     
 })
+/**
+ * oct 21,2025
+ */
+//  collect the element
+const inputpassword = document.querySelector("#password")
+//add a focus event to the input 
+inputpassword.addEventListener("focus",function(){
+    event.classList.add()
+})
+//add a blur event to an input
+inputpassword.addEventListener("focus",function(){
+    inputpassword.classList.remove("active_input_valid")
+    inputpassword.classList.add("active_input_invalid")
+})
 
+//shuf

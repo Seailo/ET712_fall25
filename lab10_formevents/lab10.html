@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Andrew Murray</h1>
-<form class="myform">
+<form class="myform" id ="form1" >
     <legend class="legend">User Info</legend>
     <section class="formcontrol">
     <label class ="form_label"for="username">Enter Username</label>
@@ -16,6 +16,10 @@
     <p class="username_error_msg"></p>   
 </section>
 
+<section class ="formcontrol">
+    <label for="password" class="form_label">Enter a password</label>
+    <input type ="password" id="password" class="form_input" placeholder="type your password...">
+</section>
     <input type="submit" value="submit" class="btnsubmit">
 
     <!--Display a welcome message-->
@@ -24,6 +28,17 @@
 </div>
 </form>
 
+<form class ="myform">
+<h2>Unscramble the word!</h2>
+<p>Shuffled word<strong id ="shuffledword"></strong></p>
+
+<section class ="formcontrol">
+    <input type ="text" id="guessInput" class="form_input" placeholder="Type the corrct word!...">
+    <p id="wordfeedback"></p>
+</section>
+</form>
+<!-- do not use a submit button for the lab exercise 
+ make taken usernames -->
 
     <script src="lab10_script.js"></script>
 </body>
