@@ -9,6 +9,7 @@ let displayusername= document.querySelector(".display_username")
 myform.addEventListener("submit",function(event){
     //prevent the default form behavior
     event.preventDefault()
+
     //collect the data
     let usernameInput = document.querySelector("#username")
     let usernamevalue = usernameInput.value
@@ -22,11 +23,18 @@ myform.addEventListener("submit",function(event){
     //in html after the validation the greeting message will display witha  username
     greeting.style.display="block"
     displayusername.textContent= usernamevalue
+    
+   //clear the username field
     usernameInput.value = ""
 
     //submit the form after valiidation
     myform.submit()
 })
+let btnsubmit = document.querySelector(".btnsubmit")
+window.addEventListener("load", function(){
+    btnsubmit.disabled= true
+})
+
 let username_error_msg= document.querySelector(".username_error_msg")
 let usernameInput = document.querySelector("#username")
 usernameInput.addEventListener("Input",function(){
