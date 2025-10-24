@@ -1,8 +1,8 @@
 *{box-sizing: border-box;}
 html{scroll-behavior:smooth ;}
-img{width: 1000%; display:block;}
+img{width: 46%; display:block;}
 
-
-.name :hover{
-size: 1000px;
+.cat{
+    width:200px;
+    height:auto;
 }
