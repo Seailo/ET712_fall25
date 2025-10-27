@@ -4,7 +4,7 @@ const btnLeft = document.getElementById('btnLeft');
 const btnRight = document.getElementById('btnRight');
 
 // Each card is about 300px wide including margin
-const scrollAmount = 900;
+const scrollAmount = 300;
 
 // Move right
 btnRight.addEventListener('click', () => {
