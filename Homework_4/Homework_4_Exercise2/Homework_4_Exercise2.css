@@ -1,58 +1,84 @@
-/* BASE STYLES - Typography and layout */
+/* PAGE BASE - Center layout and text */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #fafafa;
     margin: 0;
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
-/* GALLERY CONTAINER - Holds buttons and card section */
+/* GALLERY WRAPPER - Holds everything */
 .gallery-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    overflow: hidden;
-    margin-top: 30px;
+    position: relative;
+    max-width: 90%;
+    margin: 30px auto;
 }
 
-/* CARD WRAPPER - Horizontal scrolling area */
-.card-wrapper {
-    display: flex;
-    overflow: hidden;
-    width: 660px; /* 3 cards visible at a time (3 * 220px) */
-    scroll-behavior: smooth;
-}
-
-/* INDIVIDUAL CARD - Basic layout and spacing */
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    margin: 0 5px;
-    padding: 10px;
-    width: 200px;
-    flex-shrink: 0;
-}
-
-/* IMAGE STYLING - Resized and rounded corners */
-.card img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-/* NAVIGATION BUTTONS - Left and right arrows */
+/* NAVIGATION BUTTONS - Left & Right */
 .nav-btn {
     background-color: #333;
     color: white;
     border: none;
-    border-radius: 50%;
     font-size: 24px;
     padding: 10px 15px;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 .nav-btn:hover {
     background-color: #555;
+}
+
+/* GALLERY SCROLL AREA */
+.gallery {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 900px;
+}
+
+/* CARD STYLE - Each image section */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin: 10px;
+    flex: 0 0 280px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px;
+    color: #333;
+}
+
+.card p {
+    margin: 0 10px 10px;
+    color: #555;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    background: #0078d7;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background: #005fa3;
 }

@@ -3,63 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Murray</title>
+    <title>Andrew Murray - Card Gallery</title>
     <link rel="stylesheet" href="Homework_4_Exercise2.css">
 </head>
 <body>
 
-    <h1>Card Gallery Exercise</h1>
-    <p>Use the arrows to navigate through the cards.</p>
+    <h1>Card Gallery with Navigation</h1>
 
-    <!-- GALLERY WRAPPER - Contains navigation buttons and all cards -->
+    <!-- GALLERY SECTION - Displays 6 cards, 3 visible at a time -->
     <div class="gallery-container">
-        <button id="btnLeft" class="nav-btn">&#60;</button>
+        <button id="btnLeft" class="nav-btn">❮</button>
+        <div class="gallery" id="gallery">
 
-        <div class="card-wrapper" id="cardWrapper">
             <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="Card 1">
-                <h3>Card 1</h3>
-                <p>Description for card 1.</p>
+                <img src="Images/Image_1.jpg" alt="Person posing with a fan against a red background on a checkered floor.">
+                <h3>Style & Form</h3>
+                <p>Fashion meets geometry in a bold, minimal setting.</p>
                 <a href="#">Learn More</a>
             </div>
 
             <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="Card 2">
-                <h3>Card 2</h3>
-                <p>Description for card 2.</p>
+                <img src="Images/Image_2.jpg" alt="Aerial view of cars driving on curved city highways surrounded by trees.">
+                <h3>Urban Motion</h3>
+                <p>City highways twist and flow through the landscape.</p>
                 <a href="#">Learn More</a>
             </div>
 
             <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="Card 3">
-                <h3>Card 3</h3>
-                <p>Description for card 3.</p>
+                <img src="Images/Image_3.jpg" alt="Sunflowers and lemons arranged on a newspaper on a concrete surface.">
+                <h3>Simple Life</h3>
+                <p>Sunlight, flowers, and citrus — the calm of small joys.</p>
                 <a href="#">Learn More</a>
             </div>
 
             <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="Card 4">
-                <h3>Card 4</h3>
-                <p>Description for card 4.</p>
+                <img src="Images/Image_4.jpg" alt="Red tree surrounded by colorful fall foliage and purple flowers in a garden.">
+                <h3>Autumn Colors</h3>
+                <p>The perfect balance of warm tones and cool breezes.</p>
                 <a href="#">Learn More</a>
             </div>
 
             <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="Card 5">
-                <h3>Card 5</h3>
-                <p>Description for card 5.</p>
+                <img src="Images/Image_5.jpg" alt="Hand holding a bowl of cherry tomatoes over green grass.">
+                <h3>Fresh Pick</h3>
+                <p>Nature’s sweetness held in one gentle handful.</p>
                 <a href="#">Learn More</a>
             </div>
 
             <div class="card">
-                <img src="https://via.placeholder.com/200x150" alt="Card 6">
-                <h3>Card 6</h3>
-                <p>Description for card 6.</p>
+                <img src="Images/Image_6.jpg" alt="Cluster of red flowers blooming in a green garden.">
+                <h3>Bloom Burst</h3>
+                <p>Vibrant reds in full bloom against a soft green backdrop.</p>
                 <a href="#">Learn More</a>
             </div>
+
         </div>
-
-        <button id="btnRight" class="nav-btn">&#62;</button>
+        <button id="btnRight" class="nav-btn">❯</button>
     </div>
 
     <script src="Homework_4_Exercise2.js"></script>

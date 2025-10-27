@@ -1,30 +1,25 @@
-// Andrew Murray - Homework 4 Exercise 2
-
-// SELECT ELEMENTS - Gallery wrapper and buttons
-const cardWrapper = document.getElementById('cardWrapper');
+// GALLERY NAVIGATION - Scroll through cards 3 at a time
+const gallery = document.getElementById('gallery');
 const btnLeft = document.getElementById('btnLeft');
 const btnRight = document.getElementById('btnRight');
 
-// VARIABLE - Card width used for scrolling calculation
-const cardWidth = 220 * 3; // 3 visible cards
+// Each card is about 300px wide including margin
+const scrollAmount = 900;
 
-// EVENT HANDLERS - Scroll left and right with loop behavior
+// Move right
 btnRight.addEventListener('click', () => {
-    if (cardWrapper.scrollLeft + cardWidth >= cardWrapper.scrollWidth) {
-        // Loop to start when reaching end
-        cardWrapper.scrollTo({ left: 0, behavior: 'smooth' });
+    if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
+        gallery.scrollTo({ left: 0, behavior: 'smooth' }); // loop back to start
     } else {
-        // Scroll to next set of cards
-        cardWrapper.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
 });
 
+// Move left
 btnLeft.addEventListener('click', () => {
-    if (cardWrapper.scrollLeft === 0) {
-        // Loop to end when scrolling left from start
-        cardWrapper.scrollTo({ left: cardWrapper.scrollWidth, behavior: 'smooth' });
+    if (gallery.scrollLeft === 0) {
+        gallery.scrollTo({ left: gallery.scrollWidth, behavior: 'smooth' }); // loop to end
     } else {
-        // Scroll back to previous set
-        cardWrapper.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     }
 });
