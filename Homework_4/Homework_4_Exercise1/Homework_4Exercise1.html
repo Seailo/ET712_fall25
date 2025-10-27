@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Murray</title>
+    <link rel="stylesheet" href="Homework_4_Exercise1.css">
+</head>
+<body>
+
+    <h1>Form Validation Exercise</h1>
+    <p>Please fill in all fields below.</p>
+
+    <!--  FORM SECTION- Contains input fields for Name, Email, Password -->
+    <form id="userForm">
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" placeholder="Enter your name">
+        <div class="error" id="nameError"></div>
+
+       
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" placeholder="example@email.com">
+        <div class="error" id="emailError"></div>
+
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="At least 5 chars, includes #, $, or %">
+        <div class="error" id="passwordError"></div>
+
+        
+        <button type="submit" id="btnSubmit">Submit</button>
+    </form>
+
+    <!-- SUCCESS MESSAGE SECTION- Displays after successful validation -->
+    <div id="successMessage"></div>
+
+    <script src="Homework_4_Exercise1.js"></script>
+</body>
+</html>

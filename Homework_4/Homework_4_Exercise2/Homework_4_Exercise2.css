@@ -1,0 +1,58 @@
+/* BASE STYLES - Typography and layout */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* GALLERY CONTAINER - Holds buttons and card section */
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+/* CARD WRAPPER - Horizontal scrolling area */
+.card-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 660px; /* 3 cards visible at a time (3 * 220px) */
+    scroll-behavior: smooth;
+}
+
+/* INDIVIDUAL CARD - Basic layout and spacing */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin: 0 5px;
+    padding: 10px;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+/* IMAGE STYLING - Resized and rounded corners */
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* NAVIGATION BUTTONS - Left and right arrows */
+.nav-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
