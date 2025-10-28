@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Animal Quiz</title>
+    <link rel="stylesheet" href="project2_style.css">
+</head>
+<body>
+   
+    <div class="banner_container">
+        <h1 class="banner_text">Animal Quiz Time!</h1>
+    </div>
+
+   
+    <section class="quiz_section">
+        <div class="border_section">
+            <img class="quiz_image" src="animals_file/images/image1.jpg" alt="Animal">
+            <p class="question">What animal is this?</p>
+
+            <input type="text" id="answerInput" placeholder="Type your answer here...">
+            <button id="submitBtn">Submit</button>
+            <p id="feedback"></p>
+        </div>
+    </section>
+
+    <script src="project2_script.js"></script>
+</body>
+</html>
+
+
+
+css:
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FAF3E0;
+    border: 25px solid #ffd166;
+    padding: 10px;
+    box-shadow: 0 0 0 8px black inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.banner_container {
+    width: 100%;
+    height: 200px;
+    background-image: url('header_icons/banner.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_text {
+    color: white;
+    font-size: 2.3em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.quiz_section {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.border_section {
+    background-color: #fff8e7;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.border_section:hover {
+    transform: translateY(-5px);
+}
+
+
+.quiz_image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ffd166;
+    margin-bottom: 15px;
+}
+
+.question {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffd166;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffb703;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+js:
+document.getElementById("submitBtn").addEventListener("click", function() {
+    const answer = document.getElementById("answerInput").value.trim().toLowerCase();
+    const feedback = document.getElementById("feedback");
+
+    if (answer === "cat") {
+        feedback.textContent = "✅ Correct! Great job!";
+        feedback.style.color = "green";
+    } else {
+        feedback.textContent = "❌ Try again!";
+        feedback.style.color = "red";
+    }
+
+    document.getElementById("answerInput").value = ""; // clears input
+});

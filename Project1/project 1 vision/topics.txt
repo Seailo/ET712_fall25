@@ -1,0 +1,39 @@
+body parts
+Numbers
+Animals
+Fruits
+Colors
+
+
+to guide the awnsers in the code use this 
+for the multiple possiblity awnsers 
+
+
+const correctAnswers = ["blue", "sky blue"];
+if (correctAnswers.includes(userAnswer.toLowerCase().trim())) {
+  // correct
+}
+else{
+    // incorrect
+}
+
+
+Im planning to have a box a emoji at the top right
+with a check mark and a x mark surrounded by a 
+small border box to react on the correct and wrong
+output for each question.  
+
+Use lab 8 for the scrolling concepts
+
+Css from lab 8 and 5 
+
+normal html  from 1 -3
+
+also for the images i want to link it through 
+
+<a href="nextpage.html">
+  <img src="images/picture1.jpg" alt="Go to next page">
+</a>
+
+so all of them would lead to their own pages 
+
