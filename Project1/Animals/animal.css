@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body{
-height: 100%;
-}
 html {
     scroll-behavior: smooth;
 }
@@ -14,12 +11,13 @@ html {
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #FAF3E0;
-    border: 25px solid #ffd166; 
-    padding: 10px;              
-    box-shadow: 0 0 0 8px black inset; 
-    
+    border: 25px solid #ffd166;
+    padding: 10px;
+    box-shadow: 0 0 0 8px black inset;
+    min-height: 100vh;
 }
 
+/* Giraffe Banner */
 .banner_container {
     width: 100%;
     height: 200px;
@@ -32,49 +30,198 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .banner_text {
     color: white;
-    font-size: 2.5em;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    font-size: 3em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
     text-align: center;
     font-weight: bold;
 }
 
-.stretched_image {
-    width: 100%;
-    height: 150px;
-    background: #FAF3E0;
+/* Back to Home Button */
+.nav_home {
+    text-align: center;
     margin: 20px 0;
-    border-radius: 10px;
+}
+
+.btn_home {
+    display: inline-block;
+    background: #ffd166;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
-.content_area {
-    padding: 20px;
-    min-height: 400px;
+.btn_home:hover {
+    background: #ffb703;
+    transform: scale(1.05);
 }
 
-.border_section {
-    background: transparent;           
-    border: none;                      
-    padding: 25px;                     
-    margin: 20px 0;                    
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
-    border-radius: 15px;              
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Intro Section */
+.intro_section {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    margin: 30px auto;
+    border-radius: 20px;
+    max-width: 800px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.border_section:hover {
-    transform: translateY(-5px);       
+.intro_section h2 {
+    color: #ffb703;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.intro_section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Animal Gallery Container */
+.gallery_container {
+    position: relative;
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    background: #fff8e7;
+    border-radius: 25px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 30px 20px;
+    border: 5px solid #ffd166;
 }
 
-.image_section1{
-    border: 5px solid black;
-    padding:25px;
-    margin:20px 0;
-    box-shadow: 0 5px 15px (0, 0, 0, 0.1);
+.gallery_scroll_btn {
+    background: #ffd166;
+    border: 3px solid black;
+    font-size: 2.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+.gallery_scroll_btn:hover {
+    transform: scale(1.15);
+    background: #ffb703;
+}
+
+.gallery_window {
+    flex: 1;
+    overflow: hidden;
     border-radius: 15px;
 }
+
+.gallery_track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+/* Animal Cards */
+.animal_card {
+    flex: 0 0 calc(100% - 20px);
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid #ffd166;
+}
+
+.animal_emoji {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12em;
+    background: linear-gradient(135deg, #6bcf7f, #ffd93d);
+}
+
+.animal_info {
+    padding: 25px;
+    text-align: center;
+}
+
+.animal_name {
+    font-size: 2.5em;
+    color: #ffb703;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.animal_sound {
+    font-size: 1.8em;
+    color: #4d96ff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.animal_description {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* To Top Button */
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ffd166;
+    color: black;
+    border: 3px solid black;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+#toTopBtn:hover {
+    background-color: #ffb703;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.1em;
+    color: #666;
+}
+

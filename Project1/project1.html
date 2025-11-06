@@ -6,52 +6,89 @@
     <title>Andrew Murray / Kids Website</title>
     <link rel="stylesheet" href="project1_style.css">
 </head>
-<body>
-    <!-- Giraffe Banner with welcome text inside -->
+  <body>
+    <!-- Giraffe Banner -->
     <div class="banner_container">
-        <h1 class="banner_text">Welcome to Our Fun Website!</h1>
+        <h1 class="banner_text"> Welcome to Fun Learning! </h1>
     </div>
 
-    <!-- Stretched image section -->
-    <div class="stretched_image">
-        <div class="content_area">
-        <div class="border_section">
-            <h2>Fun Activities</h2>
-            <p>More content areas...</p>
-        </div>
-    </div>
-    </div>
+    <!-- Welcome Section -->
+    <section class="welcome_section">
+        <h2>Hi Kids! Let's Learn Together! </h2>
+        <p>Click on the pictures below to explore colors, numbers, animals, and shapes!</p>
+        <p>Have fun learning! </p>
+    </section>
 
-    <!-- Image Scroller Section For Main Menu -->
+    <!-- Section Title -->
+    <h2 class="scroller_title">Choose What to Learn! 👇</h2>
 
+    <!-- Image Scroller Navigation -->
     <div class="image_scroller">
-  <button class="scroll_btn left_btn">&#10094;</button>
-<!-- Thinking on wether I should make a main page for the -->
-  <div class="scroller_window">
-    <div class="image_track">
-      <a href="Animals/animal.html" target="_blank" rel="noopener noreferrer">
-      <img src="Animals/images/image1.jpg" alt="Image 1">
-    </a>
-    <a href="animals_file/animal.html" target="_blank" rel="noopener noreferrer">
-      <img src="animals_file/images/image1.jpg" alt="Image 2">
-     </a>
-      <a href="animals_file/animal.html" target="_blank" rel="noopener noreferrer">
-           <img src="animals_file/images/image1.jpg" alt="Image 3">
-           </a>
-           <p> Hello</p>
-           <a href="animals_file/animal.html" target="_blank" rel="noopener noreferrer">
-      <img src="animals_file/images/image1.jpg" alt="Image 4">
-      </a>
+        <button class="scroll_btn left_btn">◀</button>
+        
+        <div class="scroller_window">
+            <div class="image_track">
+                <!-- Colors Card -->
+                <a href="Colors/colors.html" class="learning_card">
+                    <div class="card_image" style="background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f, #4d96ff);">
+                        🎨
+                    </div>
+                    <div class="card_content">
+                        <h3>Colors</h3>
+                        <p>Learn about colors!</p>
+                    </div>
+                </a>
 
-      <a href="animals_file/animal.html" target="_blank" rel="noopener noreferrer">
-      <img src="animals_file/images/image1.jpg" alt="Image 5">
-      </a>
+                <!-- Numbers Card -->
+                <a href="Numbers/numbers.html" class="learning_card">
+                    <div class="card_image" style="background: linear-gradient(135deg, #4d96ff, #6bcf7f);">
+                        🔢
+                    </div>
+                    <div class="card_content">
+                        <h3>Numbers</h3>
+                        <p>Count from 1 to 10!</p>
+                    </div>
+                </a>
+
+                <!-- Animals Card -->
+                <a href="Animals/animal.html" class="learning_card">
+                    <div class="card_image" style="background: linear-gradient(135deg, #6bcf7f, #ffd93d);">
+                        🐾
+                    </div>
+                    <div class="card_content">
+                        <h3>Animals</h3>
+                        <p>Meet cute animals!</p>
+                    </div>
+                </a>
+
+                <!-- Shapes Card -->
+                <a href="Shapes/shapes.html" class="learning_card">
+                    <div class="card_image" style="background: linear-gradient(135deg, #ff6b6b, #4d96ff);">
+                        ⭐
+                    </div>
+                    <div class="card_content">
+                        <h3>Shapes</h3>
+                        <p>Discover fun shapes!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <button class="scroll_btn right_btn">▶</button>
     </div>
-  </div>
 
-  <button class="scroll_btn right_btn">&#10095;</button>
-</div>
+    <!-- Spacer for scroll testing -->
+    <div class="spacer">
+        <p>⬇️ Scroll down to see the "To Top" button! ⬇️</p>
+    </div>
 
+    <!-- To Top Button -->
+    <button id="toTopBtn">⬆️</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>🌟 Made by Andrew Murray | Pre-K Learning Website 2025 🌟</p>
+    </footer>
     <script src="project1_script.js"></script>
 </body>
 </html>

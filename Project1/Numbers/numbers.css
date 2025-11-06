@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FAF3E0;
+    border: 25px solid #ffd166;
+    padding: 10px;
+    box-shadow: 0 0 0 8px black inset;
+    min-height: 100vh;
+}
+
+/* Giraffe Banner */
+.banner_container {
+    width: 100%;
+    height: 200px;
+    background-image: url('../header_icons/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.banner_text {
+    color: white;
+    font-size: 3em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+/* Back to Home Button */
+.nav_home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn_home {
+    display: inline-block;
+    background: #ffd166;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn_home:hover {
+    background: #ffb703;
+    transform: scale(1.05);
+}
+
+/* Intro Section */
+.intro_section {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    margin: 30px auto;
+    border-radius: 20px;
+    max-width: 800px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro_section h2 {
+    color: #ffb703;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.intro_section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Numbers Grid */
+.numbers_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.number_card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 5px solid #ffd166;
+    text-align: center;
+}
+
+.number_card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: #ffb703;
+}
+
+.number_card:active {
+    transform: scale(0.95);
+}
+
+.number_display {
+    font-size: 5em;
+    color: #4d96ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.number_word {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.click_count {
+    font-size: 1.2em;
+    color: #ffb703;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.emoji_display {
+    font-size: 2em;
+    margin-top: 10px;
+    min-height: 50px;
+}
+
+/* To Top Button */
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ffd166;
+    color: black;
+    border: 3px solid black;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+#toTopBtn:hover {
+    background-color: #ffb703;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+

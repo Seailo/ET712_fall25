@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Murray, Color Windows</title>
+    <link rel="stylesheet" href="colors.css">
+</head>
+<body>
+    <!-- Giraffe Banner -->
+    <header>
+        <div class="banner_container">
+            <h1 class="banner_text">🎨 Learn Colors! 🎨</h1>
+        </div>
+    </header>
+
+    
+    <nav class="nav_home">
+        <a href="../project1.html" class="btn_home">🏠 Back to Home</a>
+    </nav>
+
+    
+    <section class="intro_section">
+        <h2>Click on Each Color to Learn More! 🌈</h2>
+        <p>Tap any color card to see fun facts!</p>
+    </section>
+
+    <!-- Colors Grid -->
+    <main>
+        <div class="colors_grid">
+            <div class="color_card" data-color="red">
+                <div class="color_box" style="background-color: #ff0000;"></div>
+                <p class="color_name">Red</p>
+            </div>
+
+            <div class="color_card" data-color="blue">
+                <div class="color_box" style="background-color: #0000ff;"></div>
+                <p class="color_name">Blue</p>
+            </div>
+
+            <div class="color_card" data-color="yellow">
+                <div class="color_box" style="background-color: #ffff00;"></div>
+                <p class="color_name">Yellow</p>
+            </div>
+
+            <div class="color_card" data-color="green">
+                <div class="color_box" style="background-color: #00ff00;"></div>
+                <p class="color_name">Green</p>
+            </div>
+
+            <div class="color_card" data-color="orange">
+                <div class="color_box" style="background-color: #ffa500;"></div>
+                <p class="color_name">Orange</p>
+            </div>
+
+            <div class="color_card" data-color="purple">
+                <div class="color_box" style="background-color: #800080;"></div>
+                <p class="color_name">Purple</p>
+            </div>
+
+            <div class="color_card" data-color="pink">
+                <div class="color_box" style="background-color: #ffc0cb;"></div>
+                <p class="color_name">Pink</p>
+            </div>
+
+            <div class="color_card" data-color="brown">
+                <div class="color_box" style="background-color: #8b4513;"></div>
+                <p class="color_name">Brown</p>
+            </div>
+
+            <div class="color_card" data-color="black">
+                <div class="color_box" style="background-color: #000000;"></div>
+                <p class="color_name">Black</p>
+            </div>
+
+            <div class="color_card" data-color="white">
+                <div class="color_box" style="background-color: #ffffff;"></div>
+                <p class="color_name">White</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Window -->
+    <div id="colorModal" class="modal">
+        <div class="modal_content">
+            <span class="close_btn">&times;</span>
+            <h2 id="modalTitle">Color Name</h2>
+            <div id="modalColorBox" class="modal_color_box"></div>
+            <p id="modalDescription">Color description here</p>
+        </div>
+    </div>
+
+    <!-- To Top Button -->
+    <button id="toTopBtn">⬆️</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>🌟 Made by Andrew Murray | Pre-K Learning Website 2025 🌟</p>
+    </footer>
+
+    <script src="colors.js"></script>
+</body>
+</html>
