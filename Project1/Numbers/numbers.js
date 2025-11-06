@@ -10,6 +10,8 @@ numberCards.forEach(card => {
     const countDisplay = card.querySelector('.count');
     const emojiDisplay = card.querySelector('.emoji_display');
 
+    //Data changing after grab String-Integer ^//
+
     card.addEventListener('click', () => {
         // Increment click count
         clickCount++;

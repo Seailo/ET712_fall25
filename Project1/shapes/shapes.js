@@ -2,16 +2,26 @@ console.log('Andrew Murray - Shapes Page');
 
 // Quiz Data
 const shapes = [
-    { name: 'circle', html: '<div class="circle"></div>' },
-    { name: 'square', html: '<div class="square"></div>' },
-    { name: 'triangle', html: '<div class="triangle"></div>' },
-    { name: 'rectangle', html: '<div class="rectangle"></div>' },
-    { name: 'star', html: '<div class="star">⭐</div>' },
-    { name: 'heart', html: '<div class="heart">❤️</div>' },
-    { name: 'oval', html: '<div class="oval"></div>' },
-    { name: 'diamond', html: '<div class="diamond"></div>' },
-    { name: 'pentagon', html: '<div class="pentagon">⬟</div>' },
-    { name: 'hexagon', html: '<div class="hexagon">⬢</div>' }
+    { name: 'circle', 
+        html: '<div class="circle"></div>' },
+    { name: 'square',
+        html: '<div class="square"></div>' },
+    { name: 'triangle', 
+        html: '<div class="triangle"></div>' },
+    { name: 'rectangle', 
+        html: '<div class="rectangle"></div>' },
+    { name: 'star', 
+        html: '<div class="star">⭐</div>' },
+    { name: 'heart', 
+        html: '<div class="heart">❤️</div>' },
+    { name: 'oval', 
+        html: '<div class="oval"></div>' },
+    { name: 'diamond', 
+        html: '<div class="diamond"></div>' },
+    { name: 'pentagon', 
+        html: '<div class="pentagon">⬟</div>' },
+    { name: 'hexagon', 
+        html: '<div class="hexagon">⬢</div>' }
 ];
 
 let currentShape = null;
@@ -75,4 +85,3 @@ window.addEventListener('scroll', () => {
 });
 toTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-console.log('Shapes page loaded successfully!');
