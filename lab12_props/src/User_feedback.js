@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css'
 
-const User_feedback=function(){
+const User_feedback=function(props){
     return(
         <>
         <div className="feedbackcontainer">
