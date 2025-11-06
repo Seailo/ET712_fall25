@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Shapes - Fun Learning</title>
+    <link rel="stylesheet" href="shapes.css">
+</head>
+<body>
+    <!-- Giraffe Banner -->
+    <header>
+        <div class="banner_container">
+            <h1 class="banner_text">⭐ Learn Shapes! ⭐</h1>
+        </div>
+    </header>
+
+    <!-- Back to Home Button -->
+    <nav class="nav_home">
+        <a href="../project1.html" class="btn_home">🏠 Back to Home</a>
+    </nav>
+
+    <!-- Intro Section -->
+    <section class="intro_section">
+        <h2>Discover Fun Shapes! 🔷</h2>
+        <p>Learn about different shapes, then test yourself with the quiz below!</p>
+    </section>
+
+    <!-- Shapes Grid -->
+    <main>
+        <div class="shapes_grid">
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="circle"></div>
+                </div>
+                <p class="shape_name">Circle</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="square"></div>
+                </div>
+                <p class="shape_name">Square</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="triangle"></div>
+                </div>
+                <p class="shape_name">Triangle</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="rectangle"></div>
+                </div>
+                <p class="shape_name">Rectangle</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="star">⭐</div>
+                </div>
+                <p class="shape_name">Star</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="heart">❤️</div>
+                </div>
+                <p class="shape_name">Heart</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="oval"></div>
+                </div>
+                <p class="shape_name">Oval</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="diamond"></div>
+                </div>
+                <p class="shape_name">Diamond</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="pentagon">⬟</div>
+                </div>
+                <p class="shape_name">Pentagon</p>
+            </div>
+
+            <div class="shape_card">
+                <div class="shape_visual">
+                    <div class="hexagon">⬢</div>
+                </div>
+                <p class="shape_name">Hexagon</p>
+            </div>
+            
+        </div>
+
+        <!-- Quiz Section -->
+        <section class="quiz_section">
+            <h2>🎮 Shape Quiz Game!</h2>
+            <div class="quiz_question">
+                <p style="font-size: 1.3em; color: #666;">What shape is this?</p>
+                <div class="quiz_shape">
+                    <div id="quizShapeDisplay"></div>
+                </div>
+            </div>
+
+            <form class="quiz_form" id="shapeQuizForm">
+                <label for="shapeAnswer">Type your answer:</label>
+                <input type="text" id="shapeAnswer" placeholder="Enter shape name..." required>
+                <button type="submit" class="quiz_submit" id="submitBtn" disabled>Submit Answer</button>
+            </form>
+
+            <div id="quizFeedback" class="quiz_feedback" style="display: none;"></div>
+        </section>
+    </main>
+
+    <!-- To Top Button -->
+    <button id="toTopBtn">⬆️</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>🌟 Made by Andrew Murray | Pre-K Learning Website 2025 🌟</p>
+    </footer>
+
+    <script src="shapes.js"></script>
+</body>
+</html>
