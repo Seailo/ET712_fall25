@@ -6,7 +6,7 @@ const User_feedback=function(){
         <>
         <div className="feedbackcontainer">
             <section className="feedbackcard">
-                <div className="content"> {props.username}</div>
+                <div className="content"> {props.username} </div>
                 <div className="description"> {props.children} </div>
                 <div className="cardfooter">
                 <p className="addicon"><span>&#410011;</span> Add feedback </p>
