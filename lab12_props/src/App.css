@@ -34,7 +34,7 @@ img{
   /*user_feedback.js*/
 .feedbackcard{
   width: 300px;
-  border:solid 1px gray;
+  border:solid 1px rgb(54, 54, 54);
   border-radius: 5px;
   text-align:cemter;
   overflow:hidden;
@@ -56,3 +56,55 @@ img{
 
 }
 
+/*
+*modal window js
+*/
+
+.modalWindow{
+  background-color: rgba(50,50,50,0.7);
+  position:fixed;
+  top :0%; bottom: 0%; left:0%; right:0%;
+display:none;
+}
+.modalcontent{
+  background-color: whitesmoke;
+  width:100px;
+  margin:100px auto;
+}
+
+
+.modal header{
+
+  border-bottom:ridge1px lightblue;
+  display:flex;
+}
+.modalheader p:nth-child(1){
+  font-size: 1.2rem;
+  text-align:center;
+  width:80%;
+}
+.closemodal{
+  margin-left:auto;
+  padding-right: 2rem;
+  color:lightgreen;
+}
+.commentarea{
+  width:80%;
+  margin:10%;
+  padding:0.5rem 1rem;
+}
+.btnpostfeedback{
+  width:80%;
+  margin:10%;
+  background-color: lightgreen;
+  padding:1rem;
+border:none;
+border-radius:5px;
+}
+
+.btnpostfeedback:hover{
+  color:crimson;
+}
+.closemodal:hover{
+  color:crimson;
+}

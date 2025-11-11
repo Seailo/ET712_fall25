@@ -1,6 +1,7 @@
 import './App.css';
 import User from './commments'
 import user from "./User_feedback"
+import Moda
 
 //import images
 import avatar1 from "./images/icon_batman.png"
