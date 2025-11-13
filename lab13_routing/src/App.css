@@ -1,0 +1,52 @@
+*{box-sizing:border-box;}
+img{width:100%; display: block;}
+
+.title{
+  text-align:center ;
+  color:blueviolet;
+}
+/* navbars */ 
+
+.navbar{
+  background-color:aliceblue;
+  width: 80%;
+  margin:auto;
+  display: flex;
+  padding:2rem;
+  font-size:2rem;
+}
+.qcclink{width:20%;}
+.qcclink a{color:blueviolet; text-decoration: none; font-weight: bolder;}
+.btngroup{width:80%; margin-right: auto;}
+.btngroup button{background-color:aliceblue; width:30%; font-size: 1.5rem; text-decoration:none; border:none;}
+
+.qcclink a:hover, Link:hover{
+  color:crimson;
+  font-size: 1rem;
+}
+
+/*About.js */
+
+.headertitle{
+  text-align:center;
+}
+
+.maincontainer{
+  display:flex;
+  justify-content:center;
+  flex-wrap:nowrap;
+  width:900px;
+}
+
+.cardimg{
+  width:40%;
+  margin:2%;
+}
+
+.cardimg :hover{
+  cursor:pointer; 
+  transform: scale(0.99);
+  box-shadow: none;
+  opacity:90%;
+
+}
