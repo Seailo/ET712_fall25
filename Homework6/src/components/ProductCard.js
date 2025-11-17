@@ -4,7 +4,7 @@ import ProductPrice from "./ProductPrice";
 
 function ProductCard(props) {
     return (
-        <div className="product-card">
+        <div className="card">
             <ProductImage image={props.image} />
             <ProductName name={props.name} />
             <ProductPrice price={props.price} />

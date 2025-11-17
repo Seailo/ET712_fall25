@@ -1,8 +1,5 @@
-function ProductImage({ image }) {
-
-  return
-   <img src={image} alt="product" style={{ width: "120px" }} />;
+function ProductImage(props) {
+    return <img src={props.image} alt={props.name} />;
 }
-
 
 export default ProductImage;

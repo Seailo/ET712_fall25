@@ -1,7 +1,5 @@
-function ProductName({ name }) {
-
-  return 
-  <h2>{name}</h2>;
+function ProductName(props) {
+    return <p className="card-title">{props.name}</p>;
 }
 
 export default ProductName;

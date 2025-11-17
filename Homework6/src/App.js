@@ -30,8 +30,12 @@ const products = [
   { name: "Magic Wand", image: Wand, price: 8.99, inStock: true },
 ];
 
-
+<div className= "Title">ANDREW MURRAY STORE</div>
     return (
+        <>
+        <header className="store-header">
+            <h1>Anderw's Store</h1>
+        </header>
         <div className="product-grid">
             {products.map((item, index) => (
                 <ProductCard
@@ -43,6 +47,7 @@ const products = [
                 />
             ))}
         </div>
+        </>
     );
 }
 

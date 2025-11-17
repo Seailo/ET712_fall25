@@ -1,8 +1,5 @@
-function ProductPrice({price }) {
-
-  return
-   <p>${price}</p>;
+function ProductPrice(props) {
+    return <p className="card-price">${props.price}</p>;
 }
-
 
 export default ProductPrice;
