@@ -36,7 +36,7 @@ const submitted_comments= function(event){
   const submitform= function(event){
     event.preventDefault()
   }
-
+//pasport function 
   return (
     <div className="App">
      <form className= "myform">
