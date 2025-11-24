@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+.page {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.page img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+/* 🔥 NEW: Tower Image Grid */
+.tower-grid {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tower-card {
+  flex: 1;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #fafafa;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.tower-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.tower-card:hover {
+  border-color: #0077ff;
+  transform: scale(1.03);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* NAV */
+nav.nav {
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+.tower-gallery {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.tower-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.tower-item:hover {
+  transform: scale(1.05);
+  border-color: #333;
+}
+
+.tower-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
