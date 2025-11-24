@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import eiffelImg from "../images/eiffel.jpg";
+import cnImg from "../images/cn.jpg";
+import empireImg from "../images/empire.jpg";
+
 
 function Home() {
   return (
@@ -15,17 +19,17 @@ function Home() {
       <div className="tower-gallery">
 
         <Link to="/eiffel" className="tower-item">
-          <img src="/images/eiffel.jpg" alt="Eiffel Tower" />
+          <img src={eiffelImg} alt="Eiffel Tower" />
           <p>Eiffel Tower</p>
         </Link>
 
         <Link to="/cn" className="tower-item">
-          <img src="/images/cn.jpg" alt="CN Tower" />
+          <img src={cnImg} alt="CN Tower" />
           <p>CN Tower</p>
         </Link>
 
         <Link to="/empire" className="tower-item">
-          <img src="/images/empire.jpg" alt="Empire State Building" />
+          <img src={empireImg} alt="Empire State Building" />
           <p>Empire State Building</p>
         </Link>
 
