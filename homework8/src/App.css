@@ -7,16 +7,40 @@ body {
 
 /* NAVBAR */
 .navbar {
-  background: darkgreen;
+  background: rgb(4, 177, 4);
   color: white;
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 8rem;
 }
-.navbrand, .navcart {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.nav-link1 {
+    display: flex;
+    align-items: left;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+.nav-link2 {
+    display: flex;
+    align-items: right;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav-link1:hover, .nav-link2:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 /* LAYOUT */
@@ -26,7 +50,7 @@ body {
 
 .page-title {
   text-align: center;
-  color: darkgreen;
+  color: rgb(4, 177, 4);
 }
 
 /* PRODUCT GRID */
@@ -52,7 +76,7 @@ body {
 .btn {
   width: 100%;
   padding: 0.6rem;
-  background: darkgreen;
+  background: rgb(4, 177, 4);
   color: white;
   border: none;
   border-radius: 4px;
