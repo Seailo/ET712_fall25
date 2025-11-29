@@ -12,13 +12,32 @@ img{width:100%; display:block;}
     justify-content:center;
     flex-wrap:wrap;
 }
-.card{
-    border:solid 2px gray 1px;
-    width:200px;
-    margin:2rem;
-    padding:1rem;
-    border-radius:5px;
+.card {
+    border: 1px solid gray;
+    width: 200px;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 }
+
+.card img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+}
+
+.btn_addcart {
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 3px;
+    padding: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
 .productname{
     text-align:center;
     font-weight:bolder;

@@ -16,7 +16,10 @@ const Cart= ({cart,removeFromCart})=>{
                                 <p className="cartitemprice">{item.price}/lb</p>
                                 <p className="cartitemquantity">{item.qty} </p>
                                 <p className="cartitemtotal">{item.price *item.qty}</p>
-                                <button className="btncardremove"onClick={()=>removeFromCart(item.id)}> ❌ Remove</button>
+                                <button className="btncartremove" onClick={() => removeFromCart(item.id)}>
+  ❌ Remove
+</button>
+
                             </div>
                         )
                     )
