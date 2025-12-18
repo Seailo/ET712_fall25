@@ -1,40 +1,124 @@
-const PRODUCTS = [
+const products = [
   {
     id: 1,
-    title: "Air Phantom 1",
-    brand: "AirBrand",
-    image: "/images/shoe1.jpg",
-    basePrice: 210,
-    was: 260,
-    sizes: [7, 8, 9, 10, 11, 12],
+    name: "Air Max 270",
+    brand: "Nike",
+    color: "Black",
+    price: 150,
+    sizes: ["8", "9", "10", "11"],
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+    description: "The Nike Air Max 270 features the tallest Air unit yet for a soft, comfortable ride. Perfect for everyday wear with its breathable mesh upper and flexible design."
   },
   {
     id: 2,
-    title: "Retro Runner",
-    brand: "RunCo",
-    image: "/images/shoe2.jpg",
-    basePrice: 180,
-    was: 210,
-    sizes: [6, 7, 8, 9, 10],
+    name: "Ultraboost 22",
+    brand: "Adidas",
+    color: "White",
+    price: 180,
+    sizes: ["7", "8", "9", "10", "12"],
+    image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400",
+    description: "Adidas Ultraboost 22 delivers maximum comfort and energy return with its responsive Boost midsole and Primeknit upper that adapts to your foot's natural movement."
   },
   {
     id: 3,
-    title: "Midcourt High",
-    brand: "HoopLab",
-    image: "/images/shoe3.jpg",
-    basePrice: 250,
-    was: 295,
-    sizes: [8, 9, 10, 11, 12],
+    name: "RS-X Efekt",
+    brand: "Puma",
+    color: "Red",
+    price: 110,
+    sizes: ["8", "9", "10", "11", "12"],
+    image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    description: "The Puma RS-X Efekt combines retro style with modern technology. Featuring a chunky silhouette and comfortable cushioning for all-day wear."
   },
   {
     id: 4,
-    title: "Cloud Kicks",
-    brand: "Nimbus",
-    image: "/images/shoe4.jpg",
-    basePrice: 145,
-    was: 170,
-    sizes: [7, 8, 9, 10],
+    name: "Fresh Foam 1080v11",
+    brand: "New Balance",
+    color: "Blue",
+    price: 160,
+    sizes: ["7", "8", "9", "10", "11"],
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4ba?w=400",
+    description: "New Balance Fresh Foam 1080v11 offers premium cushioning and a plush ride. Perfect for long runs and daily training with its supportive yet flexible design."
   },
+  {
+    id: 5,
+    name: "Chuck 70 High",
+    brand: "Converse",
+    color: "Black",
+    price: 85,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400",
+    description: "The Converse Chuck 70 High is a modern take on the classic. Featuring premium canvas, enhanced cushioning, and vintage details for timeless style."
+  },
+  {
+    id: 6,
+    name: "Old Skool",
+    brand: "Vans",
+    color: "Gray",
+    price: 70,
+    sizes: ["7", "8", "9", "10", "11"],
+    image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400",
+    description: "Vans Old Skool is the original skate shoe with iconic side stripe. Durable canvas and suede construction with signature waffle sole for grip."
+  },
+  {
+    id: 7,
+    name: "Air Force 1 '07",
+    brand: "Nike",
+    color: "White",
+    price: 90,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4ba?w=400",
+    description: "The Nike Air Force 1 '07 stays true to the original with its iconic silhouette and comfortable Air cushioning. A classic that never goes out of style."
+  },
+  {
+    id: 8,
+    name: "Gazelle",
+    brand: "Adidas",
+    color: "Brown",
+    price: 80,
+    sizes: ["8", "9", "10", "11"],
+    image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    description: "Adidas Gazelle brings back the '90s classic with its suede upper and iconic three stripes. Perfect for casual wear with its timeless design."
+  },
+  {
+    id: 9,
+    name: "Suede Classic",
+    brand: "Puma",
+    color: "Black",
+    price: 65,
+    sizes: ["7", "8", "9", "10", "11", "12"],
+    image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400",
+    description: "The Puma Suede Classic is an icon of street style. Soft suede upper and classic fat laces make this a timeless choice for everyday wear."
+  },
+  {
+    id: 10,
+    name: "990v5",
+    brand: "New Balance",
+    color: "Gray",
+    price: 185,
+    sizes: ["8", "9", "10", "11"],
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4ba?w=400",
+    description: "New Balance 990v5 represents premium craftsmanship with its pigskin upper and ENCAP midsole technology. Made in the USA for superior quality."
+  },
+  {
+    id: 11,
+    name: "One Star Pro",
+    brand: "Converse",
+    color: "Red",
+    price: 75,
+    sizes: ["7", "8", "9", "10", "11"],
+    image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400",
+    description: "Converse One Star Pro features a durable suede upper and CONS traction rubber for skate performance. Iconic star logo and modern comfort."
+  },
+  {
+    id: 12,
+    name: "Sk8-Hi",
+    brand: "Vans",
+    color: "Blue",
+    price: 75,
+    sizes: ["8", "9", "10", "11", "12"],
+    image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400",
+    description: "Vans Sk8-Hi is the legendary high-top skate shoe with ankle support and iconic side stripe. Canvas and suede construction with waffle sole."
+  }
 ];
 
-export default PRODUCTS;
+export default products;

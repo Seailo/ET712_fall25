@@ -1,48 +1,70 @@
-import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './components/Home';
+import Cart from './components/Cart';
+import ScrollToTopButton from './components/ScrollToTopButton';
+import './App.css';
 
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Cart from "./components/Cart";
-
-import "./App.css";
-
-export default function App() {
+function App() {
   const [cart, setCart] = useState([]);
 
-  // add to cart: if exists increase qty, else add with qty 1
-  const addToCart = (product) => {
-    const exist = cart.find((item) => item.id === product.id);
-    if (exist) {
-      setCart(
-        cart.map((item) =>
-          item.id === product.id ? { ...item, qty: item.qty + 1 } : item
-        )
-      );
-    } else {
-      setCart([...cart, { ...product, qty: 1 }]);
-    }
+  const addToCart = (product, quantity) => {
+    setCart(prevCart => {
+      const existingItem = prevCart.find(item => item.id === product.id);
+      if (existingItem) {
+        return prevCart.map(item =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + quantity }
+            : item
+        );
+      }
+      return [...prevCart, { ...product, quantity }];
+    });
+  };
+
+  const updateQuantity = (id, quantity) => {
+    setCart(prevCart =>
+      prevCart.map(item =>
+        item.id === id ? { ...item, quantity } : item
+      )
+    );
   };
 
   const removeFromCart = (id) => {
-    setCart(cart.filter((item) => item.id !== id));
+    setCart(prevCart => prevCart.filter(item => item.id !== id));
   };
 
   return (
-    <div className="App">
-      <Navbar cartCount={cart.reduce((s, i) => s + i.qty, 0)} />
-
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home onOpenProduct={() => {}} />} />
-          <Route path="/products" element={<Products addToCart={addToCart} />} />
-          <Route
-            path="/cart"
-            element={<Cart cart={cart} removeFromCart={removeFromCart} />}
-          />
-        </Routes>
+    <Router>
+      <div className="App">
+        <Header cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
+        <main className="main-content">
+          <Routes>
+            <Route 
+              path="/" 
+              element={
+                <Home 
+                  addToCart={addToCart}
+                />
+              } 
+            />
+            <Route 
+              path="/cart" 
+              element={
+                <Cart 
+                  cart={cart}
+                  updateQuantity={updateQuantity}
+                  removeFromCart={removeFromCart}
+                />
+              } 
+            />
+          </Routes>
+        </main>
+        <ScrollToTopButton />
       </div>
-    </div>
+    </Router>
   );
 }
+
+export default App;
